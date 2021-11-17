@@ -10,7 +10,7 @@ const path = require('path');
 //     console.log(scoreOld);
 // });
 
-fs.readFile(path.join(__dirname, '/成绩.txt'), 'utf8', (err, data) => {
+fs.readFile(path.join(__dirname, '/成绩.txt'), 'utf-8', (err, data) => {
     // 如果出现异常直接抛出异常
     if (err) throw err;
     console.log('读取成功');
