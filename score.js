@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const path = require('path');
 // fs.readFile('./成绩.txt', 'utf8', function (err, data) {
 //     if (err) {
 //         return console.log('读取失败' + err.message);
@@ -10,7 +10,7 @@ const fs = require('fs');
 //     console.log(scoreOld);
 // });
 
-fs.readFile('./成绩.txt', 'utf8', (err, data) => {
+fs.readFile(path.join(__dirname, '/成绩.txt'), 'utf8', (err, data) => {
     // 如果出现异常直接抛出异常
     if (err) throw err;
     console.log('读取成功');
