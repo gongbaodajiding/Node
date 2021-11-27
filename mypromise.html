@@ -16,36 +16,36 @@
         // throw 'err';
     });
 
-    // console.log(p);
-    //
-    // p.then(value => {
-    //     console.log(value);
-    // }, reason => {
-    //     console.warn(reason);
-    // });
-    //
-    // let res = p.then(value => {
-    //     console.log(value);
-    //     // return new Promise((resolve, reject) => {
-    //     //     // resolve('success');
-    //     //     reject('Error');
-    //     //     // throw 'err';
-    //     // });
-    // }, reason => {
-    //     console.warn(reason);
-    // });
-    //
-    // console.log(res);
+    console.log(p);
+
     p.then(value => {
-        console.log(111);
-        throw 'ERROR';
-    }).then(value => {
-        console.log(222);
-    }).then(value => {
-        console.log(333);
-    }).catch(reason => {
+        console.log(value);
+    }, reason => {
         console.warn(reason);
     });
+
+    let res = p.then(value => {
+        console.log(value);
+        // return new Promise((resolve, reject) => {
+        //     // resolve('success');
+        //     reject('Error');
+        //     // throw 'err';
+        // });
+    }, reason => {
+        console.warn(reason);
+    });
+
+    console.log(res);
+    // p.then(value => {
+    //     console.log(111);
+    //     throw 'ERROR';
+    // }).then(value => {
+    //     console.log(222);
+    // }).then(value => {
+    //     console.log(333);
+    // }).catch(reason => {
+    //     console.warn(reason);
+    // });
 </script>
 </body>
 </html>
